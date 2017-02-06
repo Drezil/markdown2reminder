@@ -1,7 +1,7 @@
 name:                md2mail
 version:             0.1.0.0
--- synopsis:
--- description:
+synopsis:            small tool to read a markdown-file and send out mails
+description:         small tool to read a markdown-file and send out mails
 homepage:            https://github.com/Drezil/md2mail#readme
 license:             BSD3
 license-file:        LICENSE
@@ -17,6 +17,9 @@ library
   hs-source-dirs:      src
   exposed-modules:     Lib
   build-depends:       base >= 4.7 && < 5
+                     , time
+                     , pandoc
+                     , pandoc-types
   default-language:    Haskell2010
 
 executable md2mail
