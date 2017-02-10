@@ -5,7 +5,6 @@ import Data.Time.Clock
 import Data.Time.Calendar
 import System.Environment
 import Data.Monoid
-import Debug.Trace
 import Network.Mail.Mime hiding (mailFrom, mailTo)
 import Options.Applicative
 
@@ -58,7 +57,7 @@ main = do
 
 
 filterToday :: Day -> (Day, Mail) -> Bool
-filterToday d (d2,_) = trace (show d <> "==" <> show d2 <> "?") day1 == day2 && m1 == m2
+filterToday d (d2,_) = day1 == day2 && m1 == m2
         where
                 (_,m1,day1) = toGregorian d
                 (_,m2,day2) = toGregorian d2

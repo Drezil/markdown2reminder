@@ -10,7 +10,6 @@ import Data.Time.Calendar (Day, fromGregorian)
 import Data.Time.Format (parseTimeM, defaultTimeLocale)
 import Data.Monoid
 import Data.Maybe
-import Debug.Trace
 import Network.Mail.Mime
 import qualified Data.Text as T
 import qualified Data.Text.Lazy as TL
